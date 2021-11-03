@@ -1,20 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
-import NavBar from './components/NavBar/NavBar';
-
-const style = {
-  backgroundColor: 'pink',
-  color: 'white',
-  fontSize: '15px',
-  padding: '10px'
-}
+import Header from './components/Header/Header';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 
 function App() {
 
   return (
-    <div className="App" style={ style }>
-      <h1>Artículos de repostería </h1>
-      <NavBar />
+    <div className="App" >
+      <Header />
+      <ItemListContainer texto='Productos' />
       
     </div>
   );

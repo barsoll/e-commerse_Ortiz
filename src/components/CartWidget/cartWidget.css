@@ -1,0 +1,14 @@
+.cart-button {
+    display: flex;
+    justify-content: center;
+    float: left;
+    width: 100%;
+    margin: 15px;
+
+}
+
+.cart-button p {
+    font-size: 15px;
+    margin-left: 15px;
+
+}
