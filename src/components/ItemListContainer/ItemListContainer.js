@@ -1,12 +1,25 @@
-import React from 'react'
-import './ItemListContainer.css'
+//import React, {useState} from 'react'
+//import Product from '../Product/Product'
 
-function ItemListContainer(props) {
-    return (
-        <div>
-            <h1 className='titleProducts'>{props.texto}</h1>
-        </div>
-    )
-}
+//export default function ItemListContainer() {
+   // const [stock, setStock] = useState(0)
+    //const agregarStock = () => {
+      //  setStock(stock + 1)
+    //}
+    //const eliminarStock = () => {
+      //  setStock(stock - 1)
+    //}
+    //return(
+     //   <div>
+       //     <button onClick={agregarStock}>Agregar</button>
+         //   <button onClick={eliminarStock}>Borrar</button>
 
-export default ItemListContainer
+           // <h2>{stock}</h2>
+            //<Product title='producto 1' price='200' />
+        //</div>
+    //)
+//}
+
+
+
+

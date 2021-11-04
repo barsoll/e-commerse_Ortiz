@@ -1,16 +1,17 @@
+import { Component } from 'react';
 import cart from '../../assets/shopping-cart.png'
 import './cartWidget.css';
 
 const CartWidget = () => {
-    return (
-        <div className="cart-button">
-          <button>
-            <img src={cart} alt="" />
-          </button>
-          <p>1</p>
+  return (
+      <div className="cart-button">
+        <button>
+          <img src={cart} alt="" />
+        </button>
+        <p>0</p>
 
-        </div>
-    )
+      </div>
+  )
 }
 
-export default CartWidget
+export default CartWidget 
