@@ -1,19 +1,22 @@
 import React, {useState} from "react";
-import Product from "../Product/Product";
 import './ItemCount.css';
 
-export default function ItemCount() {
-
+export default function ItemCount(props) {
+    console.log("stock desde Item Count: ", props.stock)
 const [count, setCount] = useState(0)
+
     const agregarProducto = () => {
-        setCount(count + 1)
+        if (count < props.stock) {
+            setCount(count + 1)
+        }
     }
     const eliminarProducto = () => {
-        setCount(count - 1)
+        if( count > 0 ) {
+            setCount(count - 1)
+        }
     }
     return(
         <div>
-            <Product title='producto 1' price= '200' />
             <div className="itemCount">
             <button onClick={agregarProducto}>Añadir</button>
             <button onClick={eliminarProducto}>Eliminar</button>
